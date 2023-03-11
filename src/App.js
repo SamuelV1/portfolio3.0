@@ -29,14 +29,14 @@ function App() {
         <GlobalStyles />
         <div>
           <AnimatedCursor
-            innerSize={12}
-            outerSize={30}
+            innerSize={10}
+            outerSize={0}
             color="252, 0, 76"
             outerAlpha={0.2}
             innerScale={0.7}
             outerScale={2}
           />
-            <Main theme={themes[theme]} setTheme={setTheme} />
+          <Main theme={themes[theme]} setTheme={setTheme} />
         </div>
       </>
     </ThemeProvider>
@@ -44,5 +44,3 @@ function App() {
 }
 
 export default App;
-// check
-// https://dev.to/holdmypotion/react-custom-cursor-no-extra-dependencies-25ki    to implement more attractive cursor
